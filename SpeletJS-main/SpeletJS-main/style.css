@@ -335,7 +335,7 @@ section{
       width: 350px;
     }
     .card .front-view img{
-      max-width: 16px;
+      max-width: 40px;
     }
     .card .back-view img{
       max-width: 40px;
