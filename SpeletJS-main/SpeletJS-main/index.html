@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/gronsvamp.webp">
+    <link rel="stylesheet" href="css/style.scss">
 </head>
 <body>
     <header class="siteheader">
@@ -47,7 +48,7 @@
             <div class="contact__content">
             <div class="wrapper">
                 <div class="cards">
-                  <li onclick="changePic(this)" class="card">
+                  <li class="card">
                     <div class="view front-view">
                       <img class="img-front" src="img/qmark.png" alt="icon">
                     </div>
@@ -144,7 +145,12 @@
                     </div>
                   </li>
                   <div class="details">
-                    <p class="time">Tid: <span><b>30</b>s</span></p>
+                    <select>
+                      <option id="tiden" data-display="Select">Välj tid:</option>
+                      <option value="1">15 sekunder</option>
+                      <option value="2">30 sekunder</option>
+                      <option value="3">60 sekunder</option>
+                    </select>
                     <p class="flips">Antal: <span><b>0</b></span></p>
                     <button>Starta om</button>
                   </div>
@@ -156,6 +162,11 @@
         
     </main>
     <script src="script.js"></script>
+    <script src="js/nice-select2.js"></script>
+    <script>
+      NiceSelect.bind(document.getElementById("tiden"), {searchable: true, placeholder: 'select', searchtext: 'zoek', selectedtext: 'geselecteerd'});
+      new NiceSelect(document.getElementById("tiden"), {searchable: true});
+    </script>
     <footer>
       (C) Stefan
   </footer>
