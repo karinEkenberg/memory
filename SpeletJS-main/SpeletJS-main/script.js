@@ -12,17 +12,17 @@ för VG:
 3. Denna ska shufflas (random ordning) */
 function changePic(){
 	let changeImage = document.getElementsByClassName("img-front")[0];
-	if (changeImage.src.match("img/qmark.png")){
+	if (changeImage.src.match("img/questionmark.webp")){
 		changeImage.src = "img/blomma2mario.webp";
 	}
 	else {
-		changeImage.src = "img/qmark.png";
+		changeImage.src = "img/questionmark.webp";
 	}
 }
 let element = document.getElementsByClassName("card")[0];
 element.addEventListener("click", changePic);
 
-
+new NiceSelect(document.getElementById("a-select"), {searchable: true});
 
 
 /* 

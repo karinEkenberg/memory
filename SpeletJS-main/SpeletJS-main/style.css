@@ -277,13 +277,13 @@ section{
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   }
   .card .front-view img{
-    max-width: 40px;
+    max-width: 60px;
   }
   .card .back-view{
     transform: rotateY(-180deg);
   }
   .card .back-view img{
-    max-width: 40px;
+    max-width: 60px;
   }
   .card.flip .front-view{
     transform: rotateY(180deg);
