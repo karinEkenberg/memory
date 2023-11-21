@@ -1,4 +1,5 @@
-/* för G:
+/* 
+för G:
 1. Lägg till javascript så när man klickar på en bild med ? 
 ska bilden bakom visas
 (ps det är tillåtet att skapa CSS/html attribut etc etc)
@@ -7,10 +8,12 @@ ska bilden bakom visas
 Använd biblioteket
 https://bluzky.github.io/nice-select2/
 för att göra så att dropdownen blir snyggare
+
 för VG:
 1. Gör så spelet funkar! Tid, antal och Starta om ska funka
 2. Gör så att alla bilder initieras från en array 
-3. Denna ska shufflas (random ordning) */
+3. Denna ska shufflas (random ordning)
+ */
 
 
 
