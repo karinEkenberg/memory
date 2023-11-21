@@ -8,7 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/gronsvamp.webp">
-    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="nice-select2-master/dist/css/nice-select2.css">
+
 </head>
 <body>
     <header class="siteheader">
@@ -144,9 +145,9 @@
                     </div>
                   </li>
                   <div class="details">
-                    <select id="tiden">
-                      <option data-display="Select">Välj tid:</option>
-                      <option value="1">15 sekunder</option>
+                    <p class="time">Tid:</p> 
+                    <select id="a-select">
+                      <option value="1" selected>15 sekunder</option>
                       <option value="2">30 sekunder</option>
                       <option value="3">60 sekunder</option>
                     </select>
@@ -157,8 +158,8 @@
             </div>
         </section>
     </main>
+    <script src="nice-select2-master/dist/js/nice-select2.js"></script>
     <script src="script.js"></script>
-    <script src="js/nice-select2.js"></script>
     <footer>
       (C) Stefan
   </footer>

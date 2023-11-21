@@ -1,4 +1,4 @@
-import "css/style.scss";
+import "../scss/nice-select2.scss";
 
 // utility functions
 function triggerClick(el) {

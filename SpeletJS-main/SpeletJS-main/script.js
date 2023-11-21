@@ -12,6 +12,9 @@ för VG:
 2. Gör så att alla bilder initieras från en array 
 3. Denna ska shufflas (random ordning) */
 
+
+
+NiceSelect.bind(document.getElementById('a-select'))
 function changePic(){
 	let changeImage = document.getElementsByClassName("img-front")[0];
 	if (changeImage.src.match("img/questionmark.webp")){
