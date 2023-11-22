@@ -165,42 +165,32 @@ element12.addEventListener("click", changePicTwelve);
 
 new NiceSelect(document.getElementById("a-select"), {searchable: true});
 
+var countDownTime = 16;
+var x = setInterval(function() {
+  countDownTime--;
+  document.getElementById("time1").innerHTML = countDownTime + "s ";
+  if (countDownTime <= 0) {
+    clearInterval(x); 
+    document.getElementById("time1").innerHTML = "Time's up!";
+  }
+}, 1000);
 
-/* 
-onclick="document.getElementsByClassName('view back-view')[1].src= 'img/blomma1marip.webp'"
+var countDownTime2 = 31;
+var x2 = setInterval(function() {
+  countDownTime2--;
+  document.getElementById("time2").innerHTML = countDownTime2 + "s ";
+  if (countDownTime2 <= 0) {
+    clearInterval(x2); 
+    document.getElementById("time2").innerHTML = "Time's up!";
+  }
+}, 1000);
 
- */
-/* function changePic() {
-    let changeImages = document.getElementsByClassName("img-front");
-
-    for (let i = 0; i < changeImages.length; i++) {
-        let currentImage = changeImages[i];
-
-        if (currentImage.src.match("img/qmark.png")) {
-            currentImage.src = "img/mario-6005703_640.png";
-        } else {
-            currentImage.src = "img/qmark.png";
-        }
-    }
-} */
-
-/* function changePic(clickedElement) {
-    if (clickedElement.src.match("img/qmark.png")) {
-        clickedElement.src = "img/mario-6005703_640.png";
-    } else {
-        clickedElement.src = "img/qmark.png";
-    }
-;
-} */
-
-
-//document.getElementByClassName("img-front") .src="img/img6.jpg";
-/* function changePic(){
-	var changeImage = document.getElementById("image");
-	if (changeImage.src.match("bilder/klockan.png")){
-		changeImage.src = "bilder/klockanTva.PNG";
-	}
-	else {
-		changeImage.src = "bilder/klockan.png";
-	}
-} */
+var countDownTime3 = 61;
+var x3 = setInterval(function() {
+  countDownTime3--;
+  document.getElementById("time3").innerHTML = countDownTime3 + "s ";
+  if (countDownTime3 <= 0) {
+    clearInterval(x3); 
+    document.getElementById("time3").innerHTML = "Time's up!";
+  }
+}, 1000);
