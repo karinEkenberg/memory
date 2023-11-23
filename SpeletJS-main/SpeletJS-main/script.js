@@ -166,17 +166,18 @@ element12.addEventListener("click", changePicTwelve);
 new NiceSelect(document.getElementById("a-select"), {searchable: true});
 
 /*
-Jag får inte koden för timer att fungera, dock så fungerar det när jag testar i ett
-annat dokument. Därför skulle jag gissa på att det krockar med biblioteket som ändrar 
-utseende på selecten.
+Tyvärr hinner jag inte göra mer på grund av sjuka barn. Koden nedan fungerar tyvärr inte 
+i programmet ännu men fungerar i ett annat program när jag testar. Hade jag haft lite mer 
+tid hade jag nog fått igång det. När jag inspektar i webbläsaren så ser jag att classen 
+för options ändras och jag tror det beror på biblioteket.
 */ 
 var countDownTime = 16;
 var x = setInterval(function() {
   countDownTime--;
-  document.getElementById("time1").innerHTML = countDownTime + "s ";
+  document.getElementsByClassName("option null selected").innerHTML = countDownTime + "s ";
   if (countDownTime <= 0) {
     clearInterval(x); 
-    document.getElementById("time1").innerHTML = "Tiden är slut!";
+    document.getElementsByClassName("option null selected").innerHTML = "Tiden är slut!";
   }
 }, 1000);
 
