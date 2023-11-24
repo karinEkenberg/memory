@@ -171,32 +171,36 @@ i programmet ännu men fungerar i ett annat program när jag testar. Hade jag ha
 tid hade jag nog fått igång det. När jag inspektar i webbläsaren så ser jag att classen 
 för options ändras och jag tror det beror på biblioteket.
 */ 
-var countDownTime = 16;
-var x = setInterval(function() {
-  countDownTime--;
-  document.getElementsByClassName("option null selected").innerHTML = countDownTime + "s ";
-  if (countDownTime <= 0) {
-    clearInterval(x); 
-    document.getElementsByClassName("option null selected").innerHTML = "Tiden är slut!";
-  }
-}, 1000);
-
-var countDownTime2 = 31;
-var x2 = setInterval(function() {
-  countDownTime2--;
-  document.getElementById("time2").innerHTML = countDownTime2 + "s ";
-  if (countDownTime2 <= 0) {
-    clearInterval(x2); 
-    document.getElementById("time2").innerHTML = "Tiden är slut!";
-  }
-}, 1000);
-
-var countDownTime3 = 61;
-var x3 = setInterval(function() {
-  countDownTime3--;
-  document.getElementById("time3").innerHTML = countDownTime3 + "s ";
-  if (countDownTime3 <= 0) {
-    clearInterval(x3); 
-    document.getElementById("time3").innerHTML = "Tiden är slut!";
-  }
-}, 1000);
+try{
+	var countDownTime = 16;
+	var x = setInterval(function() {
+	  countDownTime--;
+	  document.getElementsByClassName("option null selected").innerHTML = countDownTime + "s ";
+	  if (countDownTime <= 0) {
+		clearInterval(x); 
+		document.getElementsByClassName("option null selected").innerHTML = "Tiden är slut!";
+	  }
+	}, 1000);
+	
+	var countDownTime2 = 31;
+	var x2 = setInterval(function() {
+	  countDownTime2--;
+	  document.getElementById("time2").innerHTML = countDownTime2 + "s ";
+	  if (countDownTime2 <= 0) {
+		clearInterval(x2); 
+		document.getElementById("time2").innerHTML = "Tiden är slut!";
+	  }
+	}, 1000);
+	
+	var countDownTime3 = 61;
+	var x3 = setInterval(function() {
+	  countDownTime3--;
+	  document.getElementById("time3").innerHTML = countDownTime3 + "s ";
+	  if (countDownTime3 <= 0) {
+		clearInterval(x3); 
+		document.getElementById("time3").innerHTML = "Tiden är slut!";
+	  }
+	}, 1000);
+} catch (error) {
+	console.log('Ett fel har inträffat:', error)
+}
