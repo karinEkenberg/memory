@@ -146,12 +146,6 @@ element12.addEventListener("click", changePicTwelve);
 
 new NiceSelect(document.getElementById("a-select"), {searchable: true});
 
-/*
-Tyvärr hinner jag inte göra mer på grund av sjuka barn. Koden nedan fungerar tyvärr inte 
-i programmet ännu men fungerar i ett annat program när jag testar. Hade jag haft lite mer 
-tid hade jag nog fått igång det. När jag inspektar i webbläsaren så ser jag att classen 
-för options ändras och jag tror det beror på biblioteket.
-*/ 
 try{
 	var countDownTime = 16;
 	var x = setInterval(function() {
