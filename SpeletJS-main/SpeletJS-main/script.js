@@ -1,22 +1,3 @@
-/* 
-för G:
-1. Lägg till javascript så när man klickar på en bild med ? 
-ska bilden bakom visas
-(ps det är tillåtet att skapa CSS/html attribut etc etc)
-2. Gör så att Tid blir en dropdown. Man ska kunna välja på
-"15s", "30s", "60s"
-Använd biblioteket
-https://bluzky.github.io/nice-select2/
-för att göra så att dropdownen blir snyggare
-
-för VG:
-1. Gör så spelet funkar! Tid, antal och Starta om ska funka
-2. Gör så att alla bilder initieras från en array 
-3. Denna ska shufflas (random ordning)
- */
-
-
-
 NiceSelect.bind(document.getElementById('a-select'))
 function changePic(){
 	let changeImage = document.getElementsByClassName("img-front")[0];
